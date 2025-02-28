@@ -1,6 +1,6 @@
 function anosParaElRetiro(edad){
     const edadDeRetiro = 65;
-    return 65 - edad;
+    return edadDeRetiro - edad;
 }
 
 
@@ -8,6 +8,7 @@ let tiempoParaRetirarme = anosParaElRetiro(21);
 
 console.log(tiempoParaRetirarme);
 console.log(anosParaElRetiro(30));
+
 
 
 function esTarde(hora){
@@ -20,28 +21,27 @@ function esTarde(hora){
 
 
 console.log(esTarde(13));
-console.log(esTarde)(10);
+console.log(esTarde(10));
 
-function saludo(nombre){
+function saludo(nombre) {
     return "Hola " + nombre;
 }
 
-console.log(saludo(Pancracio));
-console.log(saludo(Diego));
+console.log(saludo("Pancracio"));
+console.log(saludo("Diego"));
 
 let repeticiones = 0;
 
-
 function factorial(num){
     if(num <= 1){
-        return 1;   
-     }
-     return num * factorial(num - 1);
+        return 1;
+    }
+    return num * factorial(num - 1);
 }
 
-function factorialIteractivo(num){
+function factorialIterativo(num){
     let resultado = 1;
-    for(let i = 1; 1 <=num; i++){
+    for(let i = 1; i <= num; i++){
         resultado *= i;
     }
     return resultado;

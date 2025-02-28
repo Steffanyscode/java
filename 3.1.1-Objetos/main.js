@@ -1,11 +1,11 @@
 const persona = {
     nombre: "Diego",
     edad: 21,
-    ciudad: "CDMX"
+    ciudad: "CDMX",
     mayorEdad: true,
-    pasatiempos: ["videojuegos", "gym", "toco guitarra"];
+    pasatiempos: ["videojuegos", "gym", "guitarra"],
     mascota: {
-        nombre: "Mantequilla"
+        nombre: "Mantequilla",
         edad: 2,
         raza: "Gato",
     },
@@ -16,7 +16,6 @@ const persona = {
         console.log(`Hola me llamo ${this.nombre} tengo ${this.edad} años y mi mascota se llama ${this.mascota.nombre}`);
     },
 }
-
 console.log(persona);
 
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -30,6 +29,7 @@ for (let i = 0; i < persona.pasatiempos.length; i++) {
     console.log(element);
 }
 
+
 console.log(persona.mascota.nombre);
 
 console.log(persona["nombre"]);
@@ -39,19 +39,21 @@ persona.saludar();
 let { nombre, edad, ciudad } = persona;
 console.log(nombre);
 
+
 const persona2 = {
-    nombre: 'Fannya ',
-    edad: 42,
+    nombre: 'Daniel ',
+    edad: 29,
     ciudad: 'CDMX',
     mayorDeEdad: true,
     pasatiempos: ['videojuegos', 'ciclismo', 'nadar'],
 
     mascotas: {
-        nombre: "lorenzo",
+        nombre: "bugy",
         edad: 3,
         raza: 'gato'
     }
 }
+
 console.log("hola soy " + persona2.nombre + "mis pasatiempos  son " + persona2.pasatiempos + " y tengo una mascota que se llama " + persona2.mascotas.nombre);
 
 persona.persentarse();
@@ -94,6 +96,7 @@ class Persona {
     }
 }
 
+
 const persona3 = new Persona("Diego", 21, "Masculino");
 const persona4 = new Persona("Ana", 23, "Femenino");
 
@@ -120,6 +123,5 @@ const estudiante = new Estudiante("Diego", 21, "Masculino", "Ing. en Computació
 console.log(estudiante);
 
 estudiante.saludar();
-
 
 
